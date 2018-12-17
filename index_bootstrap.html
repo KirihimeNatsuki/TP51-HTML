@@ -4,9 +4,13 @@
 
     <meta charset="utf-8">
     <title>Mon site CV</title>
+
     <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </head>
 <header>
@@ -36,6 +40,33 @@
 
 <body>
 
+    <p> Voici la progression de cette page (pas actualisée en direct malheuresment).</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+    </div>
+    <br/>
+    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="La source du savoir de cette page" data-content="Tu veux connaître mon secret? Bootstrap c'est génial comme le cheval.">Tu veux en savoir plus ??</button>
+      <p><a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Version collapsée</a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Encore collapsée</button>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Ferme la version collapse</button></p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            La source du savoir de cette page.
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            Tu veux connaître mon secret? Bootstrap c'est génial comme le cheval.
+          </div>
+        </div>
+      </div>
+    </div>
+    <p align="center" style="color:red">Commençons par quelques essais en vrac pour l'instant</p><br/>
     <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -52,7 +83,8 @@
       </div>
     </div>
   </div>
-  <br/><br/>
+  <br/><br/><br/>
+  <h1 style="color: red">Les alertes c'est simple et rend plus agréable vos présentations</h1><br/>
   <div class="alert alert-primary" role="alert">
     Une alerte en bleu !
   </div>
@@ -88,21 +120,109 @@
     <a href="https://github.com/KirihimeNatsuki/TP51-HTML" class="list-group-item list-group-item-action disabled">Mais ne serait-ce pas notre Github c'est vraiment magique </a>
   </div>
   <br/><br/>
-
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <p> Alors là vous avez normalement plusieurs images mais apparement il y a un petit soucis, mais bon passons.</p>
+  <h1 align="center" style="color: deeppink"> Passons au carrousel maintenant qui présente en grand contraste entre les images :3</h1><br/>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="https://ressources.blogdumoderateur.com/2013/10/google-logo.png" alt="First slide">
+        <p align="center"><img src="https://www.shareicon.net/data/512x512/2015/10/02/110743_google_512x512.png" style="text-align:center" alt="First slide"></p>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="remd.gif" alt="Second slide">
+        <p align="center"><img src="rem.gif" alt="Second slide" align="center"></p>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="https://ressources.blogdumoderateur.com/2013/10/google-logo.png" alt="Third slide">
-      </div>
-    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="color:black">
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="color:black" ></span>
+      <span class="sr-only">Precedent</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Suivant</span>
+    </a>
   </div>
+  <h1 align="center" style="color: red"> Nous allons maintenant passer aux boutons qui sur Bootstrap sont très très nombreux <img src="https://media1.tenor.com/images/3194434d56c0f9a39813a9209d1dc9a1/tenor.gif?itemid=12390446"></h1><br/><br/>
+  <p align="center">Boutons classiques (avec traduction en supplément)</p>
 
+  <p align="center"><button type="button" class="btn btn-primary">Primaire</button>
+  <button type="button" class="btn btn-secondary">Secondaire</button>
+  <button type="button" class="btn btn-success">Succès</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-warning">Avertissement</button>
+  <button type="button" class="btn btn-info">Information</button>
+  <button type="button" class="btn btn-light">Blanc</button>
+  <button type="button" class="btn btn-dark">Sombre</button>
+  <button type="button" class="btn btn-link">Lien</button></p>
+
+  <p align="center">Voici maintenant des boutons avec des tags (sans traduction)</p>
+
+  <p align="center"><a class="btn btn-primary" href="#" role="button">Link</a>
+  <button class="btn btn-primary" type="submit">Button</button>
+  <input class="btn btn-primary" type="button" value="Input">
+  <input class="btn btn-primary" type="submit" value="Submit">
+  <input class="btn btn-primary" type="reset" value="Reset"></p>
+
+  <p align="center">Ah voilà des boutons que j'apprécie, ils changent de couleur lorsque que l'on passe notre curseur dessus.</p>
+
+  <p align="center"><button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-danger">Danger</button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-info">Info</button>
+  <button type="button" class="btn btn-outline-light">Light</button>
+  <button type="button" class="btn btn-outline-dark">Dark</button></p>
+  <br/><br/>
+  <p align="center">Pour ceux qui ont une mauvaise vision, rien de mieux qu'un gros bouton :
+
+  <button type="button" class="btn btn-primary btn-lg">Gros bouton: A louer</button>
+  <br/><br/>
+  Et un bouton plus petit que les autres pour les lynx ^^ :
+
+  <button type="button" class="btn btn-primary btn-sm">PETIT BOUTON</button><br/><br/><br/>
+
+  Et en exclusivité un énorme bouton avec son ami sur toute la longueur de la page<br/><br/>
+
+  <button type="button" class="btn btn-primary btn-lg btn-block">ENORME Bouton </button>
+  <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button><br/><br/>
+
+  Boutons en affichage actif :
+
+  <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+  <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+
+  En affichage desactivé
+
+  <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+  <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+
+  <br/><br/></p><p>Encore d'autres boutons </p>
+
+  <div id="divbut"class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+      </label>
+      <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+      </label>
+  </div>
+  <h2 style="color: skyblue" align="center"> Et si on joue à un PETIT JEU !!! <br/>Un de ces badges détient un lien valide TROUVE LE !!!</h2><br/>
+  <p align="center"><a href="#" class="badge badge-primary">Primaire</a>
+  <a href="#" class="badge badge-secondary">Secondaire</a>
+  <a href="index.html" class="badge badge-success">Succès</a>
+  <a href="#" class="badge badge-danger">Danger</a>
+  <a href="#" class="badge badge-warning">Warning</a>
+  <a href="#" class="badge badge-info">Information</a>
+  <a href="fail" class="badge badge-light">SAVOIR</a>
+  <a href="#" class="badge badge-dark">Sombre</a></p>
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
 </body>
 </html>

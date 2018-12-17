@@ -27,6 +27,12 @@ body{
   text-align: center;
 }
 
+#divbut{
+  width: 978px;
+	margin: 0 auto;
+	background-color: red;
+}
+
 .container{
   display: flex;
 }
