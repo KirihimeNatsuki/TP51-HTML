@@ -36,7 +36,6 @@
     position: relative;
 }
 .ca-icon{
-    src: url('remd.gif');
     font-size: 60px;
     color: #333;
     text-shadow: 0px 0px 1px #333;
@@ -61,7 +60,7 @@
     top: 50%;
 }
 .ca-main{
-    font-size: 30px;
+    font-size: 24px;
     opacity: 0.8;
     text-align: center;
     -webkit-transition: all 200ms linear;
@@ -74,7 +73,7 @@
     text-align:center;
     font-size: 14px;
     color: #666;
-    line-height: 40px;
+    line-height: 15px;
     opacity: 0.8;
     position: absolute;
     bottom: 0;
