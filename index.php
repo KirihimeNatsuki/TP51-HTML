@@ -14,6 +14,7 @@
     <header>
       <?php include"test.html"?>
     </header><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     <div class="alert alert-info" role="alert">
         Ici vous avez un lien qui renvoit au Github <a href="https://github.com/KirihimeNatsuki/TP51-HTML" class="alert-link">coucou</a>. Essayez vous verrez c'est magique.
         Et ici le lien des tests de bootstrap : <a href="test.html" class="alert-link">hellowww</a>
