@@ -15,27 +15,42 @@
     width: 500px;
 }
 
+.ca-sub{
+    text-align:center;
+    font-size: 14px;
+    color: #666;
+    line-height: 40px;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all 200ms linear;
+}
+
+
 .ca-menu li:hover{
     background-color: #000;
 }
 .ca-menu li:hover .ca-icon{
-    color: #fff;
-    font-size: 90px;
+    color: #ff2020;
+    animation: moveFromBottom 300ms ease;
 }
 .ca-menu li:hover .ca-main{
-    color: #00ccff;
-    animation: moveFromLeftRotate 300ms ease;
+    color: #ff2020;
+    animation: smallToBig 300ms ease;
 }
 .ca-menu li:hover .ca-sub{
-    color: #fff;
+    color: #000;
+    background-color: #ff2020;
     animation: moveFromBottom 500ms ease;
 }
 
-@keyframes moveFromLeftRotate{
+
+@keyframes smallToBig{
     from {
-        transform: translateX(-100%) rotate(-90deg);
+        transform: scale(0.1);
     }
     to {
-        transform: translateX(0%) rotate(0deg);
+        transform: scale(1);
     }
 }
