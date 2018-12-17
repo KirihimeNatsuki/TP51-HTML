@@ -14,7 +14,7 @@
 
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Barre de navigation -----></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -33,13 +33,24 @@
         <li class="nav-item">
           <a class="nav-link disabled" href="portfolio.html">Something</a>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#one">Les alertes</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#two">Carousel</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#three">Boutons</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#four">Jeu des badges</a>
+      </div>
       </ul>
     </div>
   </nav>
 </header>
 
 <body>
-
+    <div data-spy="scroll" data-target="#navbar" data-offset="0">
     <p> Voici la progression de cette page (pas actualisée en direct malheuresment).</p>
     <div class="progress">
       <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
@@ -84,7 +95,7 @@
     </div>
   </div>
   <br/><br/><br/>
-  <h1 style="color: red">Les alertes c'est simple et rend plus agréable vos présentations</h1><br/>
+  <h1 style="color: red" id="one">Les alertes c'est simple et rend plus agréable vos présentations</h1><br/>
   <div class="alert alert-primary" role="alert">
     Une alerte en bleu !
   </div>
@@ -120,7 +131,7 @@
     <a href="https://github.com/KirihimeNatsuki/TP51-HTML" class="list-group-item list-group-item-action disabled">Mais ne serait-ce pas notre Github c'est vraiment magique </a>
   </div>
   <br/><br/>
-  <h1 align="center" style="color: deeppink"> Passons au carrousel maintenant qui présente en grand contraste entre les images :3</h1><br/>
+  <h1 align="center" style="color: deeppink" id="two"> Passons au carrousel maintenant qui présente en grand contraste entre les images :3</h1><br/>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -142,7 +153,7 @@
       <span class="sr-only">Suivant</span>
     </a>
   </div>
-  <h1 align="center" style="color: red"> Nous allons maintenant passer aux boutons qui sur Bootstrap sont très très nombreux <img src="https://media1.tenor.com/images/3194434d56c0f9a39813a9209d1dc9a1/tenor.gif?itemid=12390446"></h1><br/><br/>
+  <h1 align="center" style="color: red" id="three"> Nous allons maintenant passer aux boutons qui sur Bootstrap sont très très nombreux <img src="https://media1.tenor.com/images/3194434d56c0f9a39813a9209d1dc9a1/tenor.gif?itemid=12390446"></h1><br/><br/>
   <p align="center">Boutons classiques (avec traduction en supplément)</p>
 
   <p align="center"><button type="button" class="btn btn-primary">Primaire</button>
@@ -210,7 +221,7 @@
           <input type="radio" name="options" id="option3" autocomplete="off"> Radio
       </label>
   </div>
-  <h2 style="color: skyblue" align="center"> Et si on joue à un PETIT JEU !!! <br/>Un de ces badges détient un lien valide TROUVE LE !!!</h2><br/>
+  <h2 style="color: skyblue" align="center" id="four"> Et si on joue à un PETIT JEU !!! <br/>Un de ces badges détient un lien valide TROUVE LE !!!</h2><br/>
   <p align="center"><a href="#" class="badge badge-primary">Primaire</a>
   <a href="#" class="badge badge-secondary">Secondaire</a>
   <a href="index.html" class="badge badge-success">Succès</a>
@@ -219,6 +230,7 @@
   <a href="#" class="badge badge-info">Information</a>
   <a href="fail" class="badge badge-light">SAVOIR</a>
   <a href="#" class="badge badge-dark">Sombre</a></p>
+</div>
 <script>
 $(function () {
   $('[data-toggle="popover"]').popover()
