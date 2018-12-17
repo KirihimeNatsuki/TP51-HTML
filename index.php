@@ -12,23 +12,7 @@
 </head>
 <body>
     <header>
-      <div id="logo-container">
-        <img src="https://www.seoclerk.com/pics/551103-1TOqFD1502285018.jpg" id="logo">
-      </div>
-      <div class="container">
-      <ul id="menu" class="text1">
-        <li>
-          création
-        </li>
-        <li>
-          Modification
-        </li>
-        <li>
-          A propos
-        </li>
-      </ul>
-      </div>
-      <div id="prenom-nom" class="text1">Prénom Nom</div>
+      <?php include"test.html"?>
     </header><br/><br/>
     <div class="alert alert-info" role="alert">
         Ici vous avez un lien qui renvoit au Github <a href="https://github.com/KirihimeNatsuki/TP51-HTML" class="alert-link">coucou</a>. Essayez vous verrez c'est magique.
