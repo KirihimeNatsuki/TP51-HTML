@@ -27,12 +27,6 @@ body{
   text-align: center;
 }
 
-#divbut{
-  width: 978px;
-	margin: 0 auto;
-	align: center;
-}
-
 .container{
   display: flex;
 }
