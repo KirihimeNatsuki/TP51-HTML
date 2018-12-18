@@ -30,7 +30,7 @@ body{
 #divbut{
   width: 978px;
 	margin: 0 auto;
-	background-color: red;
+	align: center;
 }
 
 .container{
