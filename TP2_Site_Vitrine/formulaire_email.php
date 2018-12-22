@@ -1,4 +1,17 @@
-<div>
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Nous contacter</title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styletp2.css">
+
+</head>
+<body>
+  <div>
    <form action="index.php" method="post">
  <div>
    <label for="nom">Nom :</label>
@@ -28,23 +41,6 @@
        <input type="submit" name="valider" value="envoyer" />
    </div>
 </div>
-   <?php
+<?php  include('TP2_Site_Vitrine\formulaire_email.html');   ?>
 
-   ini_set( 'display_errors', 1 );
-
-   error_reporting( E_ALL );
-
-   if(isset($_POST['valider'])){
-           $from = "test@mesozogeek.000webhostapp.com";
-           $to = "maurin.margail@ynov.com";
-           $mail = $_POST['mail'];
-           $subject = $_POST['subject'];
-           $message = $_POST['message'];
-           $nom = $_POST['nom'];
-           $prenom = $_POST['prenom'];
-           $formation = $_POST['formation'];
-           $headers = "From " . $nom . " " . $prenom . " en " . $formation . "  " . $mail;
-           mail($to,$subject,$message, $headers);
-           echo "L'email a été envoyé.";
-       }
-?>
+</body>
