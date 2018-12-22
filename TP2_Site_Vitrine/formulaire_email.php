@@ -12,7 +12,7 @@
 </head>
 <body>
   <div>
-   <form action="index.php" method="post">
+   <form action="index.html" method="post">
  <div>
    <label for="nom">Nom :</label>
    <input type="text" id="nom" name="nom" />
@@ -41,6 +41,6 @@
        <input type="submit" name="valider" value="envoyer" />
    </div>
 </div>
-<?php  include('TP2_Site_Vitrine\formulaire_email.html');   ?>
+<?php  include('TP2_Site_Vitrine\formulaire_email.php');   ?>
 
 </body>
