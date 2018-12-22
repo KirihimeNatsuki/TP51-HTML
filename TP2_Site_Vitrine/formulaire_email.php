@@ -41,6 +41,6 @@
        <input type="submit" name="valider" value="envoyer" />
    </div>
 </div>
-<?php  include('TP2_Site_Vitrine\formulaire_email.php');   ?>
+<?php  include('formulaire.php');   ?>
 
 </body>

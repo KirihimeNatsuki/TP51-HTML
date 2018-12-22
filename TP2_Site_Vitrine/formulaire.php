@@ -6,7 +6,7 @@ error_reporting( E_ALL );
 
 if(isset($_POST['valider'])){
         $from = "test@mesozogeek.000webhostapp.com";
-        $to = "enzo.lemarchand@ynov.com";
+        $to = "enzo.lemarchand83@gmail.com";
         $mail = $_POST['mail'];
         $subject = $_POST['subject'];
         $message = $_POST['message'];
