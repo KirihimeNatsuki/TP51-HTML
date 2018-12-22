@@ -47,15 +47,10 @@ textarea {
 .center-div
 {
   position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 1920px;
-  height: 200px;
-  background-image:url(Template.png);
-  background-position:center center;
-  background-repeat:no-repeat;
-  border-radius: 3px;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
