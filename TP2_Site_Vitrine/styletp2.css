@@ -52,8 +52,10 @@ textarea {
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100px;
-  height: 100px;
-  background-color: grey;
+  width: 1920px;
+  height: 200px;
+  background-image:url(Template.png);
+  background-position:center center;
+  background-repeat:no-repeat;
   border-radius: 3px;
 }
