@@ -58,3 +58,19 @@ body {
   margin: 0;
   padding: 0;
 }
+
+#bandeaumenu {
+  color: black;
+  background-image: url("template2.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: center;
+
+}
+
+#textmenu {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  width: 600px;
+}
