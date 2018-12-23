@@ -3,44 +3,174 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Mon site vitrine</title>
+    <title>TP2</title>
 
     <link rel="stylesheet" href="styletp2.css">
     <link rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </head>
-<header>
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <a class="navbar-brand" href="index.html" style="color: palevioletred">Accueil</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="test.html"style="color: orangered">Bibliothèque</a>
-        </li>
-
-        <li class="nav-item active">
-          <a class="nav-link" href="formulaire_email.php" style="color: skyblue">Nous contacter</a>
-        </li>
-      </ul>
+<body style="background-color: brown">
+<header style="background-color: black">
+    <div class="fixed-top" id="bandeaumenu">
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <nav class="navbar-center navbar-expand-lg">
+            <p align="center"><a class="badge badge-light border border-danger d-inline nav-item nav-link active text-danger text-right navbar-brand" id="textmenu1" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+            <a class="badge badge-light border border-danger d-inline nav-item nav-link active text-danger text-center navbar-brand" id="textmenu2" href="gallerie.html">Gallerie</a>
+            <a class="badge badge-light border border-danger d-inline nav-item nav-link active text-danger text-right navbar-brand" id="textmenu3" href="formulaire.php">Nous contacter</a>
+            <a class="badge badge-light border border-danger d-inline nav-item nav-link disabled text-danger text-right navbar-brand" id="textmenu4" href="TP51-HTML/index.html" tabindex="-1" aria-disabled="true">Retour en arrière</a></p>
+        </nav>
     </div>
-  </nav>
+    <div style="background-color: black"></div>
 </header>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <div style="background-color: red; height: 20px;"></div>
+    <div id="accordion" class="panel-group">
+        <div class="panel panel-default">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 align="center" class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Qui sommes-nous ?
+                        </button>
+                    </h2>
+                </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body"><p align="center"><U>Micro Entreprise déclarée à la Chambre des Métiers &amp; du Tribunal du Commerces de Toulon,
+                    nous sommes à votre disposition pour vous rencontrer sur différentes villes ou directement à
+                    notre siège social situé à Toulon Ouest.<br/>
+                    Diplômé en Communication et de l’Information, nous sommes présents sur vos projets
+                    individuels ou professionnels.</U><br/>
+                    <I style="color: blue">Nos numéros de déclarations sont :
+                        SIRET 533.905.782.00025 – APE 1813Z</I></p></div>
+                </div>
+            <div class="panel panel-default">
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 align="center" class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Nos conditions de vente :
+                            </button>
+                        </h2>
+                    </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body"><p> <I style="color: blue"> Pour toutes informations, questions, et suivi de commande, notre Service Clients est à votre
+                        disposition par mail communication.dgs@gmail.com ou par téléphone au 06 58 03 51 55 de
+                        10h00 à 12h00 et de 14h00 à 17h00 du lundi au vendredi.</I><br/><br/>
+                        <B style="font-size: 25px">1 - LE PAIEMENT</B><br/>
+                        Pour régler votre commande, vous disposez de quatre modes de paiement proposés lors des
+                        ‘’informations sur le paiement ‘’ du bon de commande.<br/><br/>
+                        <B style="color: darkred">Le Chèque</B> (paiement réservé uniquement à la France métropolitaine et DOM TOM).<br/>
+                        Celui-ci doit obligatoirement être émis par une banque domiciliée en France métropolitaine.
+                        Une commande payée par chèque sera traitée à réception du règlement, celui-ci sera encaissé
+                        à l’expédition. Les délais de disponibilité comme d&#39;expédition débutent à partir de la date
+                        d&#39;enregistrement du moyen de paiement.<br/>
+                        Le chèque doit être établi en Euros à l&#39;ordre de DIGITAL GRAPH SERVICES.
+                        Puis envoyer votre règlement par courrier à l’adresses ci-dessous :
+                        DIGITAL GRAPH SERVICES
+                        3 Chemin de Rigoumel – Le Vallon 3, 83200 Toulon<br/><br/>
+                        <B style="color: darkred">Le Virement Bancaire</B> (paiement International)
+                        Notre marchandise étant livrée à réception de votre règlement, nous vous invitons à utiliser le
+                        R.I.B. ci-dessous pour virer la somme totale de votre commande, frais de port inclus en mode
+                        SWIFT ce qui permet de réaliser votre transfert bancaire sous 48h (en moyenne), afin
+                        d&#39;expédier votre commande dans les meilleurs délais.
+                        R.I.B. DIGITAL GRAPH SERVICES
+                        Code IBAN : FR76 1009 6184 0900 0281 3830 117
+                        Nom du compte : DIGITAL GRAPH SERVICES
+                        Nom et domiciliation de la banque : CIC Toulon les Routes
+                        IMPORTANT! Veuillez indiquer le numéro de votre commande dans le libellé de votre
+                        virement bancaire.<br/>
+                        Votre commande sera expédiée à réception de votre paiement.
+                        Le paiement total pour le grand public: le principe
+                        Le paiement est exigible intégralement à compter de la commande. Les sommes encaissées ne
+                        pourront être considérées comme des arrhes. Une commande sera considérée comme soldée
 
-<body>
+                        lorsque la totalité des produits aura été expédiée et que vous vous serez intégralement acquitté
+                        du paiement des produits et de votre participation aux frais de port.
+                        Un paiement « acompte » pour le professionnel :
+                        Un acompte de 30 à 45% vous sera demandé en vu du travail et du montant du devis validé.
+                        Le restant à solder sera demandé à la livraison avec la facture acquittée.<br/><br/>
+                        <B style="font-size: 25px">2 - LA LIVRAISON</B><br/>
+                        Port et Emballage
+                        Pour tous envois postaux, une estimation sera réalisée en vue du devis et pourra être révisée à
+                        la hausse comme à la baisse (tarifs postaux ou relais)<br/><br/>
+                        <B style="font-size: 25px">3 - LES RETOURS</B><br/>
+                        Tout retour de produit doit faire l&#39;objet d&#39;une demande par mail au service client :
+                        <I style="color: blue">communication.dgs@gmail.com.</I><br/> Veuillez indiquer la raison du retour en détail et mentionner
+                        votre Nom, Prénom, numéro de commande ou facture, et numéro de téléphone. Vous devrez
+                        donc demeurer en possession de tous les éléments reçus (emballage compris) jusqu’à
+                        résolution complète de vos réclamations.<br/>
+                        Un retour complet de la commande :
+                        Lors du retour, nous vous recommandons de sur-emballer les emballages d’origine de vos
+                        produits, car nous ne pourrons reprendre que les produits renvoyés dans leur intégralité
+                        (accessoires, coupon de garantie, drivers, manuels, housse etc...), avec leur emballage
+                        d’origine, l’ensemble devant être intact et en bon état. Vous devez accompagner votre retour
+                        d’un double de la facture.<br/> Le remboursement ou l’échange supposent que vous n’ayez pas
+                        endommagé le produit, ou que vous ne l’ayez pas renvoyé incomplet. Le renvoi sera à votre
+                        charge total et non remboursable.</p></div>
+            </div>
+            <div class="panel panel-default">
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 align="center" class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Pour Grand Public et Professionnel
+                            </button>
+                        </h2>
+                    </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body"> <B style="color: darkred">Grand Public</B><br/>
+                        Vous avez une idée, une fantaisie… contactez nous !<br/>
+                        Nous pouvons fournir le textile ou simplement récupérer votre support est mettre votre
+                        imagination dessus…<br/>
+                        Flocage – Sublimation voiture – Céramique – Vitres/miroirs
+                        <br/><br/><br/>
 
-  <div class="center-div">
+                        <B style="color: darkred">Professionnels</B>
+                        Nous sommes à votre disposition pour toutes informations/devis.<br/>
+                        Spécialisé dans la communication, nous sommes présents pour vos flocages mais aussi pour
+                        toutes conception assistée par ordinateur (livre, livret, flyer, carte de visite…)<br/><br/>
 
-  </div>
-
-
-
+                        En référence, nous sommes actuellement la société de communication du Centre de Chirurgie
+                        contre l’Obésité de la Clinique de St Michel – Groupe Les Fleurs à Toulon. Nous avons
+                        réalisés dernièrement le livret « Mon Journal Bariatrique 2018 » qui sera remis aux patients
+                        pour leurs suivis post-opératoire.<br/>
+                        Contactez nous pour un rendez-vous ou un devis par mail : <I style="color: blue">communication.dgs@gmail.com</I>
+                        ou 06 58 03 51 55.
+                        </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 align="center" class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Contactez-nous !!!
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body"> <B style="color: blue">Contactez-nous / Devis</B><br/>
+                            Pour toutes informations, devis ou commande :<br/>
+                            <I style="color: blue">communication.dgs@gmail.com</I>
+                            ou
+                            06 58 03 51 55<br/><br/>
+                            Nos horaires d’ouvertures sont du lundi au vendredi de 9h00 à 12h00 et de 13h30 à 17h00 par
+                            téléphone. Nous ne recevons pas de public à notre siège social.<br/><br/>
+                            Vous pouvez nous retrouver aussi sur Facebook :
+                            <a href="https://www.facebook.com/DigitalGraphServices/">https://www.facebook.com/DigitalGraphServices/</a> <br/>
+                            Et sur Makerplace Google :
+                            <a href="http://digital-graph-services.business.site">http://digital-graph-services.business.site</a></div>
+                    </div>
+             </div>
+        </div>
+<div class="large"></div>
+<footer class="foot">
+    <B>&copy; 2018 YNOV par Enzo LEMARCHAND en partenariat avec DGS.</B>
+</footer>
 </body>
 </html>
