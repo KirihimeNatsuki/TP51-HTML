@@ -64,6 +64,8 @@ body {
   background-image: url("template2.jpg");
   background-repeat: no-repeat;
   background-position: left;
+  width: 1920px;
+
   text-align: center;
 
 }
