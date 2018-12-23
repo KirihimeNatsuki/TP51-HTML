@@ -60,19 +60,32 @@ body {
 }
 
 #bandeaumenu {
-  color: black;
+  color: white;
   background-image: url("template2.jpg");
   background-repeat: no-repeat;
-  background-position:top left;
-  background-size: contain;
+  background-size: cover;
   margin: 0;
-  text-align: center;
+  height: 250px;
 
 }
 
-#textmenu {
-  position: relative;
-  z-index: 10;
+#textmenu1 {
   text-align: center;
   width: 600px;
+  line-height: 1.5;
+}
+#textmenu2 {
+  text-align: center;
+  width: 800px;
+  line-height: 1.5;
+}
+#textmenu3 {
+  text-align: center;
+  width: 1400px;
+  line-height: 1.5;
+}
+#textmenu4 {
+  text-align: center;
+  width: 1600px;
+  line-height: 1.5;
 }
