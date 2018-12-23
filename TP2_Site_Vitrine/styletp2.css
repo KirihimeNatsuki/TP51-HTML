@@ -54,38 +54,28 @@ textarea {
   top: 0%;
   border: 0%;
 }
+
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #bandeaumenu {
-  color: white;
-  background-image: url("template2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  height: 250px;
-
+    color: white;
+    background-image: url("template2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 250px;
+    text-align: right;
 }
-
-#textmenu1 {
-  text-align: center;
-  width: 600px;
-  line-height: 1.5;
+.foot{
+    text-align: center;
+    background-color: brown;
+    font-size: 20px;
+    padding: 20px;
 }
-#textmenu2 {
-  text-align: center;
-  width: 800px;
-  line-height: 1.5;
-}
-#textmenu3 {
-  text-align: center;
-  width: 1400px;
-  line-height: 1.5;
-}
-#textmenu4 {
-  text-align: center;
-  width: 1600px;
-  line-height: 1.5;
+.large{
+    height: 350px;
+    background-color: brown;
 }
