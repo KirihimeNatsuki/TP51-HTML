@@ -6,3 +6,12 @@
 .nav-item {
   display: inline-block;
 }
+
+.bg-light {
+  background-color:#2f88e0!;
+}
+
+.sidebar {
+  font-weight: 500;
+  color: #333;
+}
