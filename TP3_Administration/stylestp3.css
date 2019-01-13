@@ -27,3 +27,10 @@
   color: #333;
   background-color: skyblue;
 }
+
+footer {
+    padding: 10px;
+    background-color: skyblue;
+    margin-left: 600px;
+    font-size: 10px;
+}
