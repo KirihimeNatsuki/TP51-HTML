@@ -35,14 +35,8 @@
         </li>
     </ul>
     </div>
-  </nav>
-  <br/><br/><br/>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed bg-dark col-md-9 ml-sm-auto col-lg-10 px-4">
-    <a class="navbar-brand col-sm-3 col-md-1 mr-0" href="../index.html">Accueil</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav2">
+    <br/>
+    <div class="collapse navbar-collapse" id="navbarNav">
       <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
@@ -114,17 +108,42 @@
               </a>
             </li>
           </ul>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Vous aimez notre dashboard ?</span></h6>
+          <div class="px-3 mt-4 mb-1">
+          <input type="checkbox" onclick="alert('Merci beaucoup c est très gentil de votre part')" class="sr-only" id="smileysblue">
+            <label for="smileysblue" class="sami sami-checkbox-blue">
+              <span class="sr-only">smile</span>
+              <i class="icons-sami-smile icons-size-3x"></i>
+            </label>
+            <input type="checkbox" onclick="alert('Meh vous êtes méchant ;( ')" class="sr-only" id="smileysred">
+            <label for="smileysred" class="sami sami-checkbox-red">
+              <span class="sr-only">confused</span>
+              <i class="icons-sami-confused icons-size-3x"></i>
+            </label>
+          </div>
+          <div class="foot fixed-bottom px-3 mt-4 mb-1">
+            <button type="button" class="btn-rounded btn-rounded-primary"><i class="icons-share"></i></button>
+            <button type="button" class="btn-rounded btn-rounded-facebook"><i class="icons-facebook"></i></button>
+            <button type="button" class="btn-rounded btn-rounded-twitter"><i class="icons-twitter"></i></button>
+            <button type="button" class="btn-rounded btn-rounded-linkedin"><i class="icons-circle-linkedin"></i></button>
+          </div>
         </div>
       </nav>
+      <br/><br/><br/>
     <div class="charts position-relative col-md-9 ml-sm-auto col-lg-10 px-4"
         data-component="line-chart"
         data-labels='["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"]'
-        data-values="[[10, 40, 40, 20, 50, 30]]">
-        <div class="chart-head mb-4">
-            <h2 class="font-weight-normal mb-0">Nombre de visites</h2>
-            <ul class="chart-caption">
-                <li class="chart-caption-item line">Visites</li>
-            </ul>
+        data-values="[[10, 40, 40, 20, 50, 30],[20, 70, 60, 10, 60, 35]]"
+        data-colors='["rgb(203, 2, 11)", "rgb(0, 0, 0)"]'>
+        <h2 class="font-weight-normal mb-0" style="text-align: center;"><FONT face="Arial Black" size="8pt"><B><U>Nombre de Visiteurs et Moyenne de pages visitées</U></B></FONT></h2>
+        <div class="chart-head">
+            <p style="color: crimson;"><FONT size="6pt"> Visiteurs </FONT>  </p>
+            <input type="checkbox" onclick="alert('Les visiteurs sont représentés par la courbe rouge ')" class="sr-only" id="samired">
+            <label for="samired" class="sami sami-checkbox-red">Vst</label>
+            <p style="color: black;"> <FONT size="6pt"> Moyenne de pages visitées </FONT> </p>
+            <input type="checkbox" onclick="alert('La moyenne de pages visitées par visites est représentée par la courbe noire ')" class="sr-only size-50" id="samigray">
+            <label for="samigray" class="sami sami-checkbox-gray">Nb Pg</label>
         </div>
         <canvas></canvas>
     </div>
@@ -177,6 +196,14 @@
           </label>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary" style="left: 500px; " style="text-align: right;">Valider</button>
+      <button type="submit" class="btn btn-primary" style="right: 500px; " style="text-align: right;">Valider</button>
     </form>
+    <footer>
+      <div class="foot">
+        <button type="button" class="btn-rounded btn-rounded-primary"><i class="icons-share"></i></button>
+        <button type="button" class="btn-rounded btn-rounded-facebook"><i class="icons-facebook"></i></button>
+        <button type="button" class="btn-rounded btn-rounded-twitter"><i class="icons-twitter"></i></button>
+        <button type="button" class="btn-rounded btn-rounded-linkedin"><i class="icons-circle-linkedin"></i></button>
+      </div>
+    </footer>
 </body>
