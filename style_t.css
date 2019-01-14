@@ -2,6 +2,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
+#navblog {
+  margin-top: 0;
+  max-height: 300px;
+  padding-top: 0;
+  padding: 0;
+}
 .ca-menu{
     padding:0;
     margin:20px auto;
@@ -13,7 +20,7 @@
     overflow: hidden;
     position: relative;
     float:left;
-    background: #fff;
+    background-color: red;
     -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
@@ -32,7 +39,7 @@
     width: 100%;
     height: 100%;
     display: block;
-    color: #333;
+    color: white;
     position: relative;
 }
 .ca-icon{
@@ -72,7 +79,7 @@
 .ca-sub{
     text-align:center;
     font-size: 14px;
-    color: #666;
+    color: white;
     line-height: 15px;
     opacity: 0.8;
     position: absolute;
