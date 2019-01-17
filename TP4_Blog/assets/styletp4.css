@@ -9,6 +9,10 @@
   padding-top: 0;
   padding: 0;
 }
+
+img{
+  vertical-align: -webkit-baseline-middle;
+}
 .ca-menu{
     padding:0;
     margin:20px auto;
