@@ -18,6 +18,15 @@ img{
   vertical-align: -webkit-baseline-middle;
   padding-top: 30px;
 }
+
+.foot {
+  text-align: center;
+  color: crimson;
+  background-color: antiquewhite;
+  font-size: 20px;
+  padding: 20px;
+}
+
 .ca-menu{
     padding:0;
     margin:20px auto;
