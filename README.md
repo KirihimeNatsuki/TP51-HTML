@@ -1,6 +1,6 @@
 TP51 HTML & CSS :
 ==
-
+Des problèmes d'iamges sont constatés dans la plupart des pages les corrections arrivent bientôt.
 
 Crée par *KirihimeNatsuki* alias **LEMARCHAND Enzo**,
 etudiant en 1ère année d'informatique, formation IT Ingésup à 
